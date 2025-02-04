@@ -48,35 +48,35 @@
                 string a = "";
                 if (j > 0 && j <= 13)
                 {
-                    a = "Heart";
+                    a = "Heart ";
                     if (j == 1) Console.WriteLine(a + " A");
-                    else if (j> 1 && j < 11) Console.WriteLine(a + " J");
+                    else if (j> 1 && j < 11) Console.WriteLine(a + j);
                     else if (j == 11) Console.WriteLine(a + " J");
                     else if (j == 12) Console.WriteLine(a + " Q");
                     else if (j == 13) Console.WriteLine(a + " K");
                 }
                 else if (j >= 14 && j <= 26)
                 {
-                    a = "Diamond";
+                    a = "Diamond ";
                     if (j == 14) Console.WriteLine(a + " A");
-                    else if (j > 14 && j < 24) Console.WriteLine(a + " J");
+                    else if (j > 14 && j < 24) Console.WriteLine(a  + (j-13));
                     else if (j == 24) Console.WriteLine(a + " J");
                     else if (j == 25) Console.WriteLine(a + " Q");
                     else if (j == 26) Console.WriteLine(a + " K");
                 }
                 else if (j <= 27 && j <= 39)
                 {
-                    a = "Clover";
+                    a = "Clover ";
                     if (j == 27) Console.WriteLine(a + " A");
-                    else if (j > 27 && j < 37) Console.WriteLine(a + " J");
+                    else if (j > 27 && j < 37) Console.WriteLine(a  + (j-26));
                     else if (j == 37) Console.WriteLine(a + " J");
                     else if (j == 38) Console.WriteLine(a + " Q");
                     else if (j == 39) Console.WriteLine(a + " K");
                 }
                 else if (j <= 40 && j <= 52)
                 {
-                    a = "Spade";
-                    if (j == 40) Console.WriteLine(a + " A");
+                    a = "Spade ";
+                    if (j == 40) Console.WriteLine(a + (j-39));
                     else if (j == 50) Console.WriteLine(a + " J");
                     else if (j == 51) Console.WriteLine(a + " Q");
                     else if (j == 52) Console.WriteLine(a + " K");
