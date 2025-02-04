@@ -4,7 +4,29 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            AddingNumber();
+        }
+
+        static void AddingNumber()
+        {
+            Random randomObj = new Random();
+
+            List<int> list = new List<int>();
+
+            int randomValue;
+
+            for (int i = 0; i < 10; i++)
+            {
+                randomValue = randomObj.Next(1, 52);
+
+                if (!list.Contains(randomValue))
+                    list.Add(randomValue);
+            }
+
+            for (int i = 0; i < 8; i++)
+            {
+                Console.Write(" " + list[i]);
+            }
         }
     }
 }
